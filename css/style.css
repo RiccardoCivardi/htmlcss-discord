@@ -27,6 +27,10 @@ h3 {
   font-size: 2rem;
 }
 
+h2, h3 {
+  margin-bottom: 30px;
+}
+
 p { 
   line-height: 30px;
 }
@@ -61,7 +65,6 @@ ul li a:hover {
   border-width: 1px;
   border-radius: 40px;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
-  opacity: 1;
   transition: box-shadow 0.5s;
 }
 
@@ -122,6 +125,22 @@ ul li a:hover {
 }
 
 
+/* WAVES */
+
+.waves {
+  height: 100px;
+  background-color: #F6F6F6;
+  -webkit-mask-image: url("../img/wave.svg");
+  mask-image: url("../img/wave.svg");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+
+.waves.waves-down {
+  transform: rotate(180deg);
+}
+
+
 /* HEADER */
 
 header {
@@ -156,7 +175,6 @@ header .menu li {
   background-image: url("../img/jumbo.png");
   background-size: cover;
   background-position: center;
-  margin-bottom: 50px;
 }
 
 .hero {
@@ -179,13 +197,9 @@ header .menu li {
 
 /* MAIN */
 
-section h2 {
-  margin-bottom: 25px;
-}
-
 main img {
   width: 60%;
-  min-width: 600px;
+  min-width: 500px;
 }
 
 section.bg-grey {
@@ -194,8 +208,10 @@ section.bg-grey {
 
 section .container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+  align-items: flex-start;
   color: #23272A;
+  padding: 100px 0;
 }
 
 section .container .text {
@@ -209,29 +225,20 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
-align-content: center;
 text-align: center;
-padding-bottom: 100px;
 }
 
 .section-bottom .box-text {
-  max-width: 1000px;
+  width: 85%;
 }
 
 .section-bottom .big-image {
-  width: 1100px;
-}
-
-.section-bottom h3 {
-  margin-bottom: 30px;
+  width: 90%;
+  min-width: 600px;
 }
 
 .section-bottom .cta .button {
   display: inline-block;
-}
-
-.section-bottom .cta .button a {
-  color: #ffffff;
 }
 
 
@@ -259,12 +266,9 @@ footer {
   width: calc(100% / 6);
 }
 
-.footer-top h3 {
-  margin-bottom: 25px;
-}
-
 .footer-top .language {
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .footer-top .col-social .states {
@@ -289,5 +293,5 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 30px 0 80px;
+  padding-top: 30px;
 }
