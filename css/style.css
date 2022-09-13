@@ -26,6 +26,23 @@ a {
   margin: 0 auto;
 }
 
+.button {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+   
+}
+
+.small-button {
+  padding: 8px 10px;
+}
+
+.big-button {
+  padding: 20px 30px;
+}
+
+
+
 /* HEADER */
 
 header {
@@ -33,6 +50,7 @@ header {
   align-items:center;
   height: 80px;
   background-color: #3061E0;
+  font-size: 0.9rem;
 }
 
 header .container {
@@ -54,8 +72,12 @@ header .menu a {
 }
 
 header .button {
-  /* DEBUG */
-  background-color: aqua; 
+  border-color: #ffffff; 
+  background-color: #ffffff;
+}
+
+header .button a {
+  color: #000000;
 }
 
 
