@@ -133,7 +133,6 @@ ul li a:hover {
   -webkit-mask-image: url("../img/wave.svg");
   mask-image: url("../img/wave.svg");
   mask-size: cover;
-  mask-repeat: no-repeat;
 }
 
 .waves.waves-down {
@@ -199,7 +198,6 @@ header .menu li {
 
 main img {
   width: 60%;
-  min-width: 500px;
 }
 
 section.bg-grey {
@@ -216,7 +214,6 @@ section .container {
 
 section .container .text {
   width: 30%;
-  min-width: 300px;
   padding: 35px 10px;
 }
 
